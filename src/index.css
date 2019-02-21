@@ -1,0 +1,56 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.50) 100%), url(img/pattern.jpg);
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    /* min-height: 100%; */
+    
+}
+#root{
+    
+    min-height: 100%;
+    /* box-sizing: border-box; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width: 1200px){
+    #root{
+        height:100%; /* vertical align center for IE */
+    }
+}
+
+
+@font-face {
+    font-family: exo2;
+    src: url('fonts/Exo2.0-Thin.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Exo2.0-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Exo2.0-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Exo2.0-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+h1{
+    font-family: exo2;
+    font-weight: normal;
+    font-size: 36px;
+    text-shadow: 0px 1px 0px black;
+}
+
+a, a:visited{
+    color: #1698d9;
+    text-decoration: none;
+    border-bottom: dashed 1px #1698d9;
+}
+a:hover{
+    color: #2ea8e6;
+}
+
+
